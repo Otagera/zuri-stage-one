@@ -21,11 +21,14 @@ const day = [
 router.get("/", async (req, res) => {
 	try {
 		const { slack_name, track } = req.query;
-
+		const isoDate = new Date().toISOString();
 		return res.status(200).send({
 			slack_name,
 			current_day: day[new Date().getUTCDay()],
-			utc_time: new Date().toISOString(),
+			utc_time:
+				isoDate.length === 24
+					? `${new Date().toISOString().slice(0, -5)}Z`
+					: `${new Date().toISOString()}`,
 			track,
 			github_file_url:
 				"https://github.com/Otagera/zuri-stage-one/blob/main/server.js",
