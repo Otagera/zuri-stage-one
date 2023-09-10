@@ -26,8 +26,9 @@ router.get("/", async (req, res) => {
 			slack_name,
 			current_day: day[new Date().getUTCDay()],
 			track,
-			github_file_url: "",
-			github_repo_url: "",
+			github_file_url:
+				"https://github.com/Otagera/zuri-stage-one/blob/main/server.js",
+			github_repo_url: "https://github.com/Otagera/zuri-stage-one",
 			status_code: 200,
 		});
 	} catch (error) {
