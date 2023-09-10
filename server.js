@@ -25,6 +25,7 @@ router.get("/", async (req, res) => {
 		return res.status(200).send({
 			slack_name,
 			current_day: day[new Date().getUTCDay()],
+			utc_time: new Date().toISOString(),
 			track,
 			github_file_url:
 				"https://github.com/Otagera/zuri-stage-one/blob/main/server.js",
