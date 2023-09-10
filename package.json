@@ -1,0 +1,34 @@
+{
+  "name": "zuri-stage-one",
+  "version": "1.0.0",
+  "description": "Zuri Stage One",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/othniel-agera/zuri-stage-one.git"
+  },
+  "author": "Othniel Agera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/othniel-agera/zuri-stage-one/issues"
+  },
+  "homepage": "https://github.com/othniel-agera/zuri-stage-one#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19",
+    "nyc": "^15.1.0",
+    "prettier": "^2.7.1"
+  }
+}
